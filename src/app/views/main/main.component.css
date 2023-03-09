@@ -1,0 +1,61 @@
+.container {
+  -webkit-box-shadow: 12px 12px 39px -8px rgba(0, 0, 0, 0.67);
+  -moz-box-shadow: 12px 12px 39px -8px rgba(0, 0, 0, 0.67);
+  box-shadow: 12px 12px 39px -8px rgba(0, 0, 0, 0.67);
+  background-color: #fff;
+  width: 70vw;
+}
+
+.header {
+  background-color: #2e4e69;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header h3,
+.contador {
+  color: #fff;
+}
+.actions {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 30px 0px 30px;
+}
+
+.contador {
+  display: flex;
+  align-items: center;
+  height: 35px;
+  background-color: #2e4e69;
+  padding: 0 70px;
+  border-radius: 10px;
+}
+
+.div-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 30px;
+}
+
+.example-full-width {
+  height: 60px;
+  width: 50%;
+}
+
+.options {
+  padding-left: 30px;
+}
+
+.div-buttons button {
+  color: #fff;
+}
+
+.div-buttons .btn-avancar {
+  background-color: #2e4e69;
+}
+
+.div-buttons .btn-voltar {
+  background-color: #4F4F4F;
+}

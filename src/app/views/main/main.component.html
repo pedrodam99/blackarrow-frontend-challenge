@@ -1,0 +1,49 @@
+<div class="container">
+  <div class="header">
+    <h3>Selecionar FIDC de Contexto</h3>
+  </div>
+
+  <div class="actions">
+    <mat-form-field class="example-full-width">
+      <input
+        type="email"
+        matInput
+        placeholder="Escreva o nome do FIDC que deseja buscar"
+      />
+    </mat-form-field>
+    <div class="contador">
+      <p>Selecionados: {{ getChecked() }}</p>
+    </div>
+  </div>
+
+  <section class="options" [formGroup]="options">
+    <p>
+      <mat-checkbox formControlName="opt1"
+        >ACELERA CASH FUNDO DE INVESTIMENTOS EM DIREITOS
+        CREDITORIOS</mat-checkbox
+      >
+    </p>
+    <p>
+      <mat-checkbox formControlName="opt2"
+        >ACELERA PROGRAMAS EDUCACIONAIS LTDA</mat-checkbox
+      >
+    </p>
+    <p>
+      <mat-checkbox formControlName="opt3"
+        >SABIA CAPITAL ANALISE DE CREDITOS LTDA</mat-checkbox
+      >
+    </p>
+    <p>
+      <mat-checkbox formControlName="opt4">SABIA FIDC</mat-checkbox>
+    </p>
+  </section>
+
+  <div class="div-buttons">
+    <button class="btn-voltar" mat-flat-button>
+      <mat-icon>arrow_back_ios</mat-icon>Voltar
+    </button>
+    <button class="btn-avancar" mat-flat-button>
+      <span>Avançar</span> <mat-icon>arrow_forward</mat-icon>
+    </button>
+  </div>
+</div>
