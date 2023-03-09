@@ -14,18 +14,15 @@ export class MainComponent {
     opt4: false,
   });
 
-  constructor(private _formBuilder: FormBuilder) {
-    console.log(Object.values(this.options.value));
-  }
+  constructor(private _formBuilder: FormBuilder) { }
 
-  getChecked(): string {
-    const options = Object.values(this.options.value);
+
+  getCheckeds(): string {
     let count = 0;
-
-    options.forEach((p) => {
-      if (p === true) count += 1;
+    Object.values(this.options.value).forEach((option) => {
+      if (option === true) count += 1;
     });
 
-    return count == 4? "Todos" : count.toString();
+    return count == Object.values(this.options.value).length? "Todos" : count.toString();
   }
 }
